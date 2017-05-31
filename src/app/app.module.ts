@@ -5,7 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from '@angular/material';
+
+import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent, DialogContent } from './app.component';
 
@@ -18,7 +19,7 @@ import { AppComponent, DialogContent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
+    MaterialImportModule,
     BrowserAnimationsModule
   ],
   entryComponents: [DialogContent],
