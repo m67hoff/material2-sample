@@ -28,3 +28,7 @@ ng s
 
 #### ToDo
 - ?
+
+
+[![Dependencies Status](https://david-dm.org/m67hoff/material2-sample.svg)](https://david-dm.org/m67hoff/material2-sample)
+[![devDependencies Status](https://david-dm.org/m67hoff/material2-sample/dev-status.svg)](https://david-dm.org/m67hoff/material2-sample?type=dev)
