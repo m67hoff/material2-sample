@@ -6,6 +6,7 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
+    "skipLibCheck": true,  // because of ts 2.4.1 error in rxjs 5.4.1 
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
