@@ -1,4 +1,6 @@
 # material2-app
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/m67hoff/material2-sample.svg)](https://greenkeeper.io/)
 Simple app that consumes Angular Material 2 components. Built with the `angular-cli`.
 
 NOTE: This is an updated version of the original:
