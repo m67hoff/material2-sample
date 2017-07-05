@@ -1,6 +1,7 @@
 ## material2-app
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/m67hoff/material2-sample.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/m67hoff/material2-sample.svg?branch=master)](https://travis-ci.org/m67hoff/material2-sample)
 [![Dependencies Status](https://david-dm.org/m67hoff/material2-sample.svg)](https://david-dm.org/m67hoff/material2-sample)
 [![devDependencies Status](https://david-dm.org/m67hoff/material2-sample/dev-status.svg)](https://david-dm.org/m67hoff/material2-sample?type=dev)
 
@@ -33,4 +34,4 @@ ng s
 
 ---
 #### ToDo
-- check if rxjs 5.x typescript 2.4.x problem still exists [rxjs issue 2539](https://github.com/ReactiveX/rxjs/issues/2539)
+- ???

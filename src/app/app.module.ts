@@ -8,12 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialImportModule } from './material-import.module';
 
-import { AppComponent, DialogContent } from './app.component';
+import { AppComponent, DialogContentComponent } from './app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogContent
+    DialogContentComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,7 @@ import { AppComponent, DialogContent } from './app.component';
     MaterialImportModule,
     BrowserAnimationsModule
   ],
-  entryComponents: [DialogContent],
+  entryComponents: [DialogContentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
