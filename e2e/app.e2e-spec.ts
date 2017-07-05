@@ -7,8 +7,14 @@ describe('material2-sample App', () => {
     page = new Material2SamplePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should have title: "material2-sample" ', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getTitle()).toEqual('material2-sample');
   });
+
+  it('should display toolbar text: "Angular Material2 Example App" ', () => {
+    page.navigateTo();
+    expect(page.getToolbarText()).toEqual('Angular Material2 Example App');
+  });
+
 });

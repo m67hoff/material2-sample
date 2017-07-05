@@ -2,7 +2,8 @@
 
 - 20170705 
   - rxjs 5.4.2 fixes the typescript 2.4.1 lint problem
-  - cleanup some ```ng lint``` "problems"   
+  - cleanup some ```ng lint``` "problems"
+  - ad some e2e and spec tests   
 - 20170704 
   - add Greenkeeper and Travis CI (also Bluemix DevOps) 
 - 20170630 

@@ -24,7 +24,8 @@ ng s
 ```
 #### Changes to original:
 - update to material2 beta7
-- update to Angular 4.2.5 & Angular-cli 1.2 
+- update to Angular 4.2.5 
+- update to Angular-cli 1.2 (including generated files) 
 - replace deprecated import of MaterialModule  (-> split to seperate import for each componet)
 - replace deprecated use of `<md-input>` and `<md-sidenav-layout>` with `<md-input-container>` and `<md-sidenav-container>` 
 - add theming as described in https://material.angular.io/guide/theming  including Multiple themes and theme for overlay-based components
@@ -34,4 +35,4 @@ ng s
 
 ---
 #### ToDo
-- ???
+- travis should run the tests 
