@@ -23,7 +23,7 @@ npm i
 ng s
 ```
 #### Changes to original:
-- update to material2 beta7
+- update to material2 beta8 (include @angular/cdk)
 - update to Angular 4.2.5 
 - update to Angular-cli 1.2 (including generated files) 
 - replace deprecated import of MaterialModule  (-> split to seperate import for each componet)

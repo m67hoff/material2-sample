@@ -1,5 +1,9 @@
 ## Changelog
 
+
+- 20170707 
+  - update to material2 beta8 (include @angular/cdk)
+  - latest dependencies
 - 20170705 
   - rxjs 5.4.2 fixes the typescript 2.4.1 lint problem
   - cleanup some ```ng lint``` "problems"
