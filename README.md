@@ -36,3 +36,7 @@ ng s
 ---
 #### ToDo
 - travis should run the tests 
+
+---
+#### Screenshot
+![](img/material2-sample.png)
