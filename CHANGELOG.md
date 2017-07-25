@@ -1,6 +1,8 @@
 ## Changelog
 
 
+- 20170725 
+  - latest dependencies
 - 20170707 
   - update to material2 beta8 (include @angular/cdk)
   - latest dependencies
