@@ -2,7 +2,7 @@ import { browser, element, by } from 'protractor';
 
 export class Material2SamplePage {
   navigateTo() {
-    browser.waitForAngularEnabled(false) //do not wait for angular async
+    browser.waitForAngularEnabled(false) // do not wait for angular async
     return browser.get('/')
   }
 

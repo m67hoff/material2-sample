@@ -1,6 +1,13 @@
 ## Changelog
 
 
+- 20170830 
+  - update to material2 beta10 (include @angular/cdk)
+  - md-input-container renamed to md-form-field
+  - md-prefix to camelCased mdPrefix
+  - other camelCased directives are not working jet (e.g.  mdButton)
+  - ng lint errors
+  - latest dependencies
 - 20170725 
   - latest dependencies
 - 20170707 
