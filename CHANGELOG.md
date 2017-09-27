@@ -1,6 +1,13 @@
 ## Changelog
 
 
+- 20170927 
+  - update to material2 beta11 (include @angular/cdk)
+  - Overlay is now part of the cdk `overlayContainer.getContainerElement().classList.add('my-theme-class')`
+  - md-prefix to mat-Prefix
+  - update to cli 1.4.3 generated tempate files  (tslint / tsconfig / polyfills / ...)
+  - ng lint errors
+  - latest dependencies  
 - 20170830 
   - update to material2 beta10 (include @angular/cdk)
   - md-input-container renamed to md-form-field

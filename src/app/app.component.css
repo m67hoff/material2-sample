@@ -11,7 +11,7 @@
   padding: 20px;
 }
 
-.app-content md-card {
+.app-content mat-card {
   margin: 20px;
 }
 
@@ -19,11 +19,11 @@
   margin: 10px;
 }
 
-.app-content md-checkbox {
+.app-content mat-checkbox {
   margin: 10px;
 }
 
-.app-content md-radio-button {
+.app-content mat-radio-button {
   margin: 10px;
 }
 

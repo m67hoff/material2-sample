@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
 
 import { MaterialImportModule } from './material-import.module';
 
@@ -21,6 +22,10 @@ import { AppComponent, DialogContentComponent } from './app.component';
     HttpModule,
     MaterialImportModule,
     BrowserAnimationsModule
+  ],
+  providers: [
+    {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
+    // ...
   ],
   entryComponents: [DialogContentComponent],
   bootstrap: [AppComponent]

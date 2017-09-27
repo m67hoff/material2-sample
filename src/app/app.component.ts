@@ -1,6 +1,6 @@
 import { Component, Optional } from '@angular/core';
 
-import { MdDialog, MdDialogRef, MdSnackBar } from '@angular/material';
+import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
 import { OverlayContainer } from '@angular/material';
 
 @Component({
@@ -20,7 +20,7 @@ export class AppComponent {
 
   progress = 0;
 
-  constructor(private _dialog: MdDialog, private _snackBar: MdSnackBar, private _overlayContainer: OverlayContainer) {
+  constructor(private _dialog: MatDialog, private _snackBar: MatSnackBar, private _overlayContainer: OverlayContainer) {
     // Update the value for the progress-bar on an interval.
     setInterval(() => {
       this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
@@ -31,9 +31,9 @@ export class AppComponent {
     this.isDarkTheme = !this.isDarkTheme;
 
     if (this.isDarkTheme) {
-      this._overlayContainer.themeClass = 'app-dark-theme';
+      this._overlayContainer.getContainerElement().classList.add('app-dark-theme');
     } else {
-      this._overlayContainer.themeClass = 'default';
+      this._overlayContainer.getContainerElement().classList.add('default');
     }
 
   }
@@ -43,7 +43,7 @@ export class AppComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       this.lastDialogResult = result;
-    })
+    });
   }
 
   openSnackBar() {
@@ -62,9 +62,9 @@ export class AppComponent {
         <input #dialogInput>
       </label>
     </p>
-    <p> <button md-button (click)="dialogRef.close(dialogInput.value)">CLOSE</button> </p>
+    <p> <button mat-button (click)="dialogRef.close(dialogInput.value)">CLOSE</button> </p>
   `,
 })
 export class DialogContentComponent {
-  constructor( @Optional() public dialogRef: MdDialogRef<DialogContentComponent>) { }
+  constructor( @Optional() public dialogRef: MatDialogRef<DialogContentComponent>) { }
 }

@@ -23,14 +23,16 @@ npm i
 ng s
 ```
 #### Changes to original:
-- update to material2 beta10 (include @angular/cdk)
-- update to Angular 4.3.6 
-- update to Angular-cli 1.3.2 (including generated files) 
+- update to material2 beta11 (include @angular/cdk)
+- update to Angular 4.4.3 
+- update to Angular-cli 1.4.3 (including generated files) 
 - replace deprecated import of MaterialModule  (-> split to seperate import for each componet)
 - replace deprecated use of `<md-input>` and `<md-sidenav-layout>` with `<md-input-container>` and `<md-sidenav-container>`
 - `<md-input-container>` renamed to `<md-form-field>` 
 - add theming as described in https://material.angular.io/guide/theming  including Multiple themes and theme for overlay-based components
 - replace deprecated import of MaterialModule  (-> split to seperate import for each componet)
+- replace deprecated md-prefix with mat* (beta11)
+- Overlay is now part of the cdk (beta11)
 - detach from fork jelbourn/material2-app because its not active maintained anymore [jelbourn comment](https://github.com/jelbourn/material2-app/pull/47#issuecomment-305238701) 
 - some code cleaning (e.g.`<md-icon>` use, css file sorted, ...)
 
