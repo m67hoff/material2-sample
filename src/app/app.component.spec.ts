@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialImportModule } from './material-import.module'
+import { MaterialImportModule } from './material-import.module';
 
 import { By } from '@angular/platform-browser';
 

@@ -1,143 +1,143 @@
 <div [class.app-dark-theme]="isDarkTheme">
-<md-sidenav-container >
+<mat-sidenav-container >
 
- <md-sidenav #sidenav mode="side" class="app-sidenav">
+ <mat-sidenav #sidenav mode="side" class="app-sidenav">
     Sidenav
-  </md-sidenav>
+  </mat-sidenav>
 
-  <md-toolbar color="primary">
-    <button md-button (click)="sidenav.toggle()">
-      <md-icon>menu</md-icon>
+  <mat-toolbar color="primary">
+    <button mat-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
     </button> 
     <div name="toolbar-title">
     Angular Material2 Example App
     </div>
     <span class="app-toolbar-filler"></span>
-    <button md-button (click)="toggleTheme()">TOGGLE THEME</button>
-  </md-toolbar>
+    <button mat-button (click)="toggleTheme()">TOGGLE THEME</button>
+  </mat-toolbar>
 
   <div class="app-content">
 
-    <md-card>
-      <button md-button>FLAT</button>
-      <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
-      <button md-raised-button color="primary">PRIMARY RAISED</button>
-      <button md-raised-button color="accent">ACCENT RAISED</button>
-    </md-card>
+    <mat-card>
+      <button mat-button>FLAT</button>
+      <button mat-raised-button matTooltip="This is a tooltip!">RAISED</button>
+      <button mat-raised-button color="primary">PRIMARY RAISED</button>
+      <button mat-raised-button color="accent">ACCENT RAISED</button>
+    </mat-card>
 
-    <md-card>
-      <md-checkbox>Unchecked</md-checkbox>
-      <md-checkbox [checked]="true">Checked</md-checkbox>
-      <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
-      <md-checkbox [disabled]="true">Disabled</md-checkbox>
-    </md-card>
+    <mat-card>
+      <mat-checkbox>Unchecked</mat-checkbox>
+      <mat-checkbox [checked]="true">Checked</mat-checkbox>
+      <mat-checkbox [indeterminate]="true">Indeterminate</mat-checkbox>
+      <mat-checkbox [disabled]="true">Disabled</mat-checkbox>
+    </mat-card>
 
-    <md-card>
-      <md-radio-button name="symbol">Alpha</md-radio-button>
-      <md-radio-button name="symbol">Beta</md-radio-button>
-      <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
-    </md-card>
+    <mat-card>
+      <mat-radio-button name="symbol">Alpha</mat-radio-button>
+      <mat-radio-button name="symbol">Beta</mat-radio-button>
+      <mat-radio-button name="symbol" disabled>Gamma</mat-radio-button>
+    </mat-card>
 
-    <md-card class="app-input-section">
-      <md-form-field>
-        <input mdInput placeholder="First name">
-      </md-form-field>
+    <mat-card class="app-input-section">
+      <mat-form-field>
+        <input matInput placeholder="First name">
+      </mat-form-field>
 
-      <md-form-field>
-        <input mdInput #nickname placeholder="Nickname" maxlength="50">
-        <md-hint align="end">
+      <mat-form-field>
+        <input matInput #nickname placeholder="Nickname" maxlength="50">
+        <mat-hint align="end">
           {{nickname.value.length }} / 50
-        </md-hint>
-      </md-form-field>
+        </mat-hint>
+      </mat-form-field>
 
-      <md-form-field>
-        <md-placeholder>
-          <md-icon>android</md-icon> Favorite phone
-        </md-placeholder>
-        <input mdInput>
-      </md-form-field>
+      <mat-form-field>
+        <mat-placeholder>
+          <mat-icon>android</mat-icon> Favorite phone
+        </mat-placeholder>
+        <input matInput>
+      </mat-form-field>
 
-      <md-form-field>
-        <input mdInput placeholder="Motorcycle model">
-        <span mdPrefix>
-          <md-icon>motorcycle</md-icon>
+      <mat-form-field>
+        <input matInput placeholder="Motorcycle model">
+        <span matPrefix>
+          <mat-icon>motorcycle</mat-icon>
           &nbsp;
         </span>
-      </md-form-field>
-    </md-card>
+      </mat-form-field>
+    </mat-card>
 
-    <md-card>
-      <md-list class="app-list">
-        <md-list-item *ngFor="let food of foods">
-          <h3 md-line>{{food.name}}</h3>
-          <p md-line >{{food.rating}}</p>
-        </md-list-item>
-      </md-list>
-    </md-card>
+    <mat-card>
+      <mat-list class="app-list">
+        <mat-list-item *ngFor="let food of foods">
+          <h3 matLine>{{food.name}}</h3>
+          <p matLine >{{food.rating}}</p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card>
 
-    <md-card>
-      <md-spinner class="app-spinner"></md-spinner>
-      <md-spinner color="accent" class="app-spinner"></md-spinner>
-    </md-card>
+    <mat-card>
+      <mat-spinner class="app-spinner"></mat-spinner>
+      <mat-spinner color="accent" class="app-spinner"></mat-spinner>
+    </mat-card>
 
-    <md-card>
+    <mat-card>
       <label>
         Indeterminate progress-bar
-        <md-progress-bar
+        <mat-progress-bar
             class="app-progress"
             mode="indeterminate"
-            aria-label="Indeterminate progress-bar example"></md-progress-bar>
+            aria-label="Indeterminate progress-bar example"></mat-progress-bar>
       </label>
 
       <label>
         Determinate progress bar - {{progress}}%
-        <md-progress-bar
+        <mat-progress-bar
             class="app-progress"
             color="accent"
             mode="determinate"
             [value]="progress"
-            aria-label="Determinate progress-bar example"></md-progress-bar>
+            aria-label="Determinate progress-bar example"></mat-progress-bar>
       </label>
-    </md-card>
+    </mat-card>
 
-    <md-card>
-      <md-tab-group>
-        <md-tab label="Earth">
+    <mat-card>
+      <mat-tab-group>
+        <mat-tab label="Earth">
           <p>EARTH</p>
-        </md-tab>
-        <md-tab label="Fire">
+        </mat-tab>
+        <mat-tab label="Fire">
           <p>FIRE</p>
-        </md-tab>
-      </md-tab-group>
-    </md-card>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
 
-    <md-card>
-      <md-icon>build</md-icon>
-    </md-card>
+    <mat-card>
+      <mat-icon>build</mat-icon>
+    </mat-card>
 
-    <md-card>
-      <button md-button [md-menu-trigger-for]="menu">
+    <mat-card>
+      <button mat-button [mat-menu-trigger-for]="menu">
         MENU
       </button>
-    </md-card>
+    </mat-card>
 
-    <md-menu #menu="mdMenu">
-      <button md-menu-item>Lemon</button>
-      <button md-menu-item>Lime</button>
-      <button md-menu-item>Banana</button>
-    </md-menu>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Lemon</button>
+      <button mat-menu-item>Lime</button>
+      <button mat-menu-item>Banana</button>
+    </mat-menu>
 
-    <md-card>
+    <mat-card>
       <p>Last dialog result: {{lastDialogResult}}</p>
-      <button md-raised-button (click)="openDialog()">DIALOG</button>
-      <button md-raised-button (click)="openSnackBar()">SNACKBAR</button>
-    </md-card>
+      <button mat-raised-button (click)="openDialog()">DIALOG</button>
+      <button mat-raised-button (click)="openSnackBar()">SNACKBAR</button>
+    </mat-card>
 
   </div>
 
-</md-sidenav-container>
+</mat-sidenav-container>
 
 <span class="app-action">
-  <button md-fab> <md-icon>check circle</md-icon> </button>
+  <button mat-fab> <mat-icon>check circle</mat-icon> </button>
 </span>
 </div>
