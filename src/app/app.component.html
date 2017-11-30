@@ -46,7 +46,7 @@
       <mat-form-field>
         <input matInput #nickname placeholder="Nickname" maxlength="50">
         <mat-hint align="end">
-          {{nickname.value.length }} / 50
+          {{ nickname.value.length }} / 50
         </mat-hint>
       </mat-form-field>
 
@@ -69,8 +69,8 @@
     <mat-card>
       <mat-list class="app-list">
         <mat-list-item *ngFor="let food of foods">
-          <h3 matLine>{{food.name}}</h3>
-          <p matLine >{{food.rating}}</p>
+          <h3 matLine>{{ food.name }}</h3>
+          <p matLine >{{ food.rating }}</p>
         </mat-list-item>
       </mat-list>
     </mat-card>
@@ -90,7 +90,7 @@
       </label>
 
       <label>
-        Determinate progress bar - {{progress}}%
+        Determinate progress bar - {{ progress }}%
         <mat-progress-bar
             class="app-progress"
             color="accent"
@@ -128,7 +128,7 @@
     </mat-menu>
 
     <mat-card>
-      <p>Last dialog result: {{lastDialogResult}}</p>
+      <p>Last dialog result: {{ lastDialogResult }}</p>
       <button mat-raised-button (click)="openDialog()">DIALOG</button>
       <button mat-raised-button (click)="openSnackBar()">SNACKBAR</button>
     </mat-card>

@@ -1,6 +1,13 @@
 ## Changelog
 
 
+- 20171129 
+  - update to material2 5.0.0.rc.2 (include @angular/cdk)
+  - fix Overlay  part of the cdk 
+  - update to cli 1.5.5 generated template files  
+  - deprecated HttpModule  from @angular/http
+  - ng lint errors
+  - latest dependencies  
 - 20170927 
   - update to material2 beta11 (include @angular/cdk)
   - Overlay is now part of the cdk `overlayContainer.getContainerElement().classList.add('my-theme-class')`

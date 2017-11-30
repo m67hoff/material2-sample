@@ -1,7 +1,7 @@
 import { Component, Optional } from '@angular/core';
 
 import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
-import { OverlayContainer } from '@angular/material';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',

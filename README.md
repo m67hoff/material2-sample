@@ -23,9 +23,9 @@ npm i
 ng s
 ```
 #### Changes to original:
-- update to material2 beta11 (include @angular/cdk)
-- update to Angular 4.4.3 
-- update to Angular-cli 1.4.3 (including generated files) 
+- update to material2 5.0.0-rc.2 (include @angular/cdk)
+- update to Angular 5.0.3 
+- update to Angular-cli 1.5.5 (including generated files) 
 - replace deprecated import of MaterialModule  (-> split to seperate import for each componet)
 - replace deprecated use of `<md-input>` and `<md-sidenav-layout>` with `<md-input-container>` and `<md-sidenav-container>`
 - `<md-input-container>` renamed to `<md-form-field>` 
