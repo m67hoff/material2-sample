@@ -1,6 +1,8 @@
 ## Changelog
 
-
+- 20180604 
+  - deprecated no longer updated
+  - update to angular / material 6.x.x 
 - 20171129 
   - update to material2 5.0.0.rc.2 (include @angular/cdk)
   - fix Overlay  part of the cdk 

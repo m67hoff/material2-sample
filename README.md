@@ -7,6 +7,8 @@
 
 ---
 
+:no_entry: Deprecated - Sorry: I no longer maintain this sample 
+
 Simple app that consumes Angular Material 2 components. Built with the `angular-cli`.
 
 NOTE: This is an updated version of the original:
@@ -23,9 +25,9 @@ npm i
 ng s
 ```
 #### Changes to original:
-- update to material2 5.0.0-rc.2 (include @angular/cdk)
-- update to Angular 5.0.3 
-- update to Angular-cli 1.5.5 (including generated files) 
+- update to material2 6.2.0 (include @angular/cdk)
+- update to Angular 6.0.3 
+- update to Angular-cli 
 - replace deprecated import of MaterialModule  (-> split to seperate import for each componet)
 - replace deprecated use of `<md-input>` and `<md-sidenav-layout>` with `<md-input-container>` and `<md-sidenav-container>`
 - `<md-input-container>` renamed to `<md-form-field>` 
